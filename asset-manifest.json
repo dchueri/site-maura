@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/site-maura/static/css/main.add659b1.css",
+    "main.js": "/site-maura/static/js/main.e31ec562.js",
+    "static/media/img-lembranca.jpg": "/site-maura/static/media/img-lembranca.2165ed07ea1d8f3332cd.jpg",
+    "static/media/img-decoracao2.jpg": "/site-maura/static/media/img-decoracao2.feae9444aa5a9802b16c.jpg",
+    "static/media/img-crianca.jpg": "/site-maura/static/media/img-crianca.cf4326853844d3e0212d.jpg",
+    "static/media/img-noivos.jpg": "/site-maura/static/media/img-noivos.b9adc8313b66a18c3938.jpg",
+    "static/media/img-topodebolo.jpg": "/site-maura/static/media/img-topodebolo.db29e4b4031c4e147071.jpg",
+    "static/media/img-pessoal.jpg": "/site-maura/static/media/img-pessoal.3a4393684f4dc9bd3f3c.jpg",
+    "static/media/img-lembranca2.jpg": "/site-maura/static/media/img-lembranca2.cd2a53654583e81c902a.jpg",
+    "index.html": "/site-maura/index.html",
+    "static/media/footer2.svg": "/site-maura/static/media/footer2.e01dfdd84a968010d4bc42db1ad90f52.svg",
+    "static/media/footer.svg": "/site-maura/static/media/footer.9dd94703eb2cfad2fd1bccc5d2ae7d0b.svg",
+    "main.add659b1.css.map": "/site-maura/static/css/main.add659b1.css.map",
+    "main.e31ec562.js.map": "/site-maura/static/js/main.e31ec562.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.add659b1.css",
+    "static/js/main.e31ec562.js"
+  ]
+}
