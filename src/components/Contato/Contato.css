@@ -1,7 +1,7 @@
 .form-contato {
   padding: 0 3rem;
   display: flex;
-  height: 50vh;
+  height: (fit-content + 10em);
   margin-top: 10em;
 }
 
@@ -27,6 +27,16 @@
   border: 2px solid var(--rosa-secundario);
   border-radius: 8px;
   font-size: 16px;
+}
+
+.c-direita > form > textarea {
+  resize:none;
+  width: 20rem;
+  height: 10rem;
+}
+
+.c-direita > form > .button {
+  box-shadow: none;
 }
 
 textarea {

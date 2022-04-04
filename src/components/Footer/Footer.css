@@ -7,7 +7,7 @@ img {
 .footer {
   display: flex;
   align-items: self-end;
-  position: relative;
+  position: static;
 }
 
 .footer > :nth-child(1) {
