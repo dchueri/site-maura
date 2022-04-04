@@ -1,0 +1,89 @@
+.menu {
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.m-esquerda {
+  flex: 1;
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+}
+
+.m-nome {
+  font-family: "Pacifico";
+  font-size: 1.3rem;
+  font-weight: 500;
+  transition: 1500ms;
+}
+
+.m-nome:hover {
+  font-size: 1.4rem;
+  color: var(--rosa-secundario);
+}
+
+.m-direita {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.m-lista {
+  flex: 10;
+}
+
+.m-lista > ul {
+  display: flex;
+  gap: 2rem;
+  margin-right: 4rem;
+  list-style-type: none;
+}
+
+.m-lista > ul > li:hover {
+  cursor: pointer;
+  color: var(--rosa-secundario);
+}
+
+.m-botao {
+  flex: 2;
+}
+
+@media screen and (max-width: 600px) {
+  .m-nome {
+    font-size: 1em;
+  }
+
+  .m-esquerda {
+    height: fit-content;
+    padding-top: 0.2em;
+  }
+
+  .m-lista {
+    display: none;
+  }
+
+  .m-botao {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .m-nome {
+    font-size: 1.5em;
+  }
+
+  .m-lista{
+    font-size: 1.5em;
+    width: fit-content;
+  }
+
+  .m-lista > ul{
+    margin: 0 1em 0 1.8em;
+  }
+
+  .m-botao{
+    font-size: 1.5em;
+  }
+}

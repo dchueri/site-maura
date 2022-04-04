@@ -1,38 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+
+:root {
+  --rosa-primario: rgb(248, 173, 255);
+  --rosa-secundario: rgb(178, 66, 189);
+  --preto: rgb(0, 0, 0);
+  --cinza: rgb(75, 75, 75);
+  --roxo: rgb(238 210 255);
+  --boxShadow: 0px 19px 60px rgba(248, 173, 255, 0.5);
+  --smBoxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+}
+
 .App {
+  padding: 0.5rem 3.5rem;
+  overflow: hidden;
+  color: var(--preto);
+}
+
+.seta {
+  width: 100%;
   text-align: center;
+  font-size: 2em;
+  color: var(--rosa-primario);
+  animation-name: seta;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes seta {
+  0% {
+    color: var(--rosa-primario);
+  }
+  33% {
+    color: var(--rosa-secundario);
+  }
+  66% {
+    color: var(--rosa-primario);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+html {
+  background: linear-gradient(
+    300deg,
+    rgb(251, 205, 255) 0%,
+    white 30%,
+    rgb(252, 224, 255) 100%
+  );
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+*:hover {
+  cursor: default;
+}
+
+* > h1 {
+  font-family: "Pacifico";
+  color: var(--preto);
+  font-weight: 300;
+  font-size: 2.8rem;
+  padding: 0 0 0.2em 0;
+}
+
+* > h2 {
+  font-family: "Pacifico";
+  color: var(--rosa-secundario);
+  font-weight: 550;
+  font-size: 3rem;
+  padding: 0 0 0.2em 0;
+}
+
+* > p {
+  font-family: "Itim", cursive;
+  font-weight: 100;
+  font-size: 1.4em;
+  color: var(--cinza);
+  margin-top: 10px;
+}
+
+* > .button {
+  border-radius: 34px;
+  border: none;
   color: white;
+  font-size: 16px;
+  width: 10em;
+  padding: 11px 26px 11px 26px;
+  background: linear-gradient(
+    190deg,
+    var(--rosa-primario) 10.71%,
+    var(--rosa-secundario) 99.36%
+  );
+  box-shadow: var(--boxShadow);
 }
 
-.App-link {
-  color: #61dafb;
+.button:hover {
+  background: white;
+  cursor: pointer;
+  color: var(--rosa-secundario);
+  border: 1px solid var(--rosa-secundario);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width:480px){
+  .App{
+    padding: 0.5rem 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1,h2 {
+    padding: 0;
+    text-align: center;
+  }
+
+  .App > a{
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  * > .button {
+    font-size: 1.5em;
   }
 }

@@ -1,0 +1,88 @@
+.form-contato {
+  padding: 0 3rem;
+  display: flex;
+  height: 50vh;
+  margin-top: 10em;
+}
+
+.c-direita {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex: 1;
+}
+
+.c-direita > form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.c-direita .usuario {
+  width: 20rem;
+  height: 2rem;
+  padding: 0.3rem;
+  outline: none;
+  border: 2px solid var(--rosa-secundario);
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 4rem !important;
+}
+
+.voltar {
+  writing-mode: vertical-rl;
+}
+
+@media screen and (max-width: 600px) {
+  .contato {
+    padding: 0 0 1em 0;
+  }
+
+  .form-contato {
+    height: 85vh;
+    padding-top: 1em;
+    padding-left: 0;
+    margin: 0;
+    display: block;
+  }
+
+  .form-contato > a {
+    padding: 0
+  }
+
+  .form-contato > a > .voltar {
+    width: 93vw;
+    height: 18vh;
+    display: flex;
+    align-items: baseline;
+    position: absolute;
+  }
+
+  .c-esquerda {
+    height: max-content;
+  }
+
+  .c-direita {
+    padding: 1em 0 0 0;
+    width: 90vw;
+    height: fit-content;
+  }
+
+  .c-direita > form {
+    gap:1rem
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .c-esquerda {
+    height: max-content;
+  }
+  .c-direita{
+    width: fit-content;
+    height: fit-content;
+  }
+}

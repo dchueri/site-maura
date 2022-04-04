@@ -1,0 +1,39 @@
+.card {
+  width: 15rem;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3);
+  border: 3px solid var(--rosa-secundario);
+  border-radius: 25px;
+  padding: 1em;
+  align-items: center;
+  box-shadow: -12px 15px 15px rgba(0,0,0,0.25);
+}
+
+.card > img {
+  width: 10rem;
+  border-radius: 25px;
+  filter: none;
+}
+
+.card > span {
+  font-family: "Itim", cursive;
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+.card > p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 17.5em;
+    height: 27em;
+    justify-content: space-evenly;
+  }
+}

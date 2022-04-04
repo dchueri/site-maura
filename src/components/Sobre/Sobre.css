@@ -1,0 +1,150 @@
+.sobre {
+  display: flex;
+  height: 77vh;
+  align-items: center;
+}
+
+.s-esquerda {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+  margin-left: 5em;
+}
+
+.s-icones {
+  justify-content: center;
+  text-decoration: none;
+  display: flex;
+  gap: 2rem;
+  text-shadow: 1em 1em 0.9em rgba(0, 0, 0, 0.3);
+}
+
+.s-icones > a > * {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--rosa-secundario);
+}
+
+.s-icones > * {
+  transform: scale(1.5);
+  text-decoration: none;
+}
+
+.s-icones > *:link {
+  text-decoration: none;
+}
+
+.s-direita {
+  padding-top: 2em;
+  flex: 1;
+}
+
+.s-nome {
+  display: flex;
+  cursor: default;
+  flex-direction: column;
+  align-items: center;
+  text-shadow: 1em 1em 0.9em rgba(0, 0, 0, 0.3);
+  transition: 600ms;
+}
+
+.s-nome:hover {
+  text-shadow: 1.1em 1.1em 1.8em rgba(0, 0, 0, 0.3);
+}
+
+.s-botao {
+  width: fit-content;
+  height: fit-content;
+  margin: 2em 0 2.2em 0;
+  box-shadow: 1em 1em 0.9em rgba(0, 0, 0, 0.3);
+  transition: 600ms;
+}
+
+.s-nome:hover > a > .s-botao {
+  box-shadow: 1.3em 1.3em 2em rgba(0, 0, 0, 0.3);
+}
+
+.s-img1 {
+  background: var(--rosa-primario);
+  width: 30em;
+  height: 30em;
+  border-radius: 63% 37% 67% 33% / 69% 60% 40% 31%;
+  position: absolute;
+  margin: 0 0 0 10em;
+}
+
+.s-img2 {
+  background: var(--rosa-secundario);
+  width: 30em;
+  height: 30em;
+  border-radius: 33% 67% 48% 52% / 36% 38% 62% 64%;
+  margin: 0 0 0 10em;
+}
+
+@media screen and (max-width: 600px) {
+  .sobre {
+    flex-direction: column;
+    text-align: center;
+    height: fit-content;
+  }
+
+  .s-esquerda {
+    margin-left: 0;
+    gap: 0rem;
+  }
+
+  .s-botao {
+    margin: 1em 0 1.5em 0;
+  }
+
+  .s-img1,
+  .s-img2 {
+    width: 17em;
+    height: 17em;
+    margin: 0;
+  }
+
+  .App > a {
+    display: block;
+    position: relative;
+    padding: 4em 0 0 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sobre {
+    padding: 5em 0 0 0;
+    flex-direction: column;
+    text-align: center;
+    height: fit-content;
+  }
+
+  .s-esquerda {
+    margin-left: 0;
+    gap: 0rem;
+  }
+
+  .s-botao {
+    font-size: 1.5em;
+    margin: 1em 0 1.5em 0;
+  }
+
+  .s-direita{
+    padding: 6em 0 0 0
+  }
+
+  .s-img1,
+  .s-img2 {
+    width: 27em;
+    height: 27em;
+    margin: 0;
+  }
+
+  .App > a {
+    display: block;
+    position: relative;
+    padding: 4em 0 0 0;
+  }
+}
