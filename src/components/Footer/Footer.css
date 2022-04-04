@@ -46,7 +46,7 @@ span {
 
 @media screen and (max-width: 600px) {
   .f-conteudo {
-    padding-bottom: 0.5em;
+    padding-bottom: 0;
     height: fit-content;
     justify-content: center;
     flex-direction: row;
