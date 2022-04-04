@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/site-maura/static/css/main.add659b1.css",
+    "main.css": "/site-maura/static/css/main.fc57e149.css",
     "main.js": "/site-maura/static/js/main.e31ec562.js",
     "static/media/img-lembranca.jpg": "/site-maura/static/media/img-lembranca.2165ed07ea1d8f3332cd.jpg",
     "static/media/img-decoracao2.jpg": "/site-maura/static/media/img-decoracao2.feae9444aa5a9802b16c.jpg",
@@ -12,11 +12,11 @@
     "index.html": "/site-maura/index.html",
     "static/media/footer2.svg": "/site-maura/static/media/footer2.e01dfdd84a968010d4bc42db1ad90f52.svg",
     "static/media/footer.svg": "/site-maura/static/media/footer.9dd94703eb2cfad2fd1bccc5d2ae7d0b.svg",
-    "main.add659b1.css.map": "/site-maura/static/css/main.add659b1.css.map",
+    "main.fc57e149.css.map": "/site-maura/static/css/main.fc57e149.css.map",
     "main.e31ec562.js.map": "/site-maura/static/js/main.e31ec562.js.map"
   },
   "entrypoints": [
-    "static/css/main.add659b1.css",
+    "static/css/main.fc57e149.css",
     "static/js/main.e31ec562.js"
   ]
 }
